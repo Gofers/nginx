@@ -59,6 +59,10 @@ server {
 		proxy_pass http://47.94.2.35:9200;
 	}
 
+	location /location {
+		proxy_pass http://47.94.2.35:8121;
+	}
+
 	location /kibana {
 		proxy_pass http://47.94.2.35:5601;
 	}
